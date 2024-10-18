@@ -1,0 +1,67 @@
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:bisque;
+}
+/*calculator's overall shape and max-width*/
+#calculator {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background-color:rgb(148, 227, 201);
+    border-radius: 15px;
+    /*set max-width for the diplay in case it overflows*/
+    max-width: 500px;
+    overflow: hidden;
+}
+/*This is the calculator's display*/
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color:rgb(27, 27, 134);
+    color: white;
+
+}
+/*Use the keys ID to structure all the buttons*/
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*gap between each button*/
+    gap: 10px;
+    /*padding around all keys*/
+    padding: 25px;
+}
+/*Stylize the buttons*/
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(155, 142, 222);
+    color: white;
+    /*1em is equal to the size of a font*/
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*hover effect*/
+button:hover{
+    background-color: rgb(155, 142, 222, 80%);
+}
+button:active {
+    background-color: rgb(155, 142, 222, 50%);
+}
+.operator-btn {
+    background-color:rgb(117, 159, 248);
+}
+.operator-btn:hover {
+    background-color:rgb(117, 159, 248, 80%);
+}
+.operator-btn:active {
+    background-color:rgb(117, 159, 248, 50%);
+}
