@@ -4,13 +4,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color:bisque;
+    height: 100%;
+    background-color:rgb(0, 0, 0);
 }
 /*calculator's overall shape and max-width*/
 #calculator {
     font-family: 'Courier New', Courier, monospace, sans-serif;
-    background-color:rgb(148, 227, 201);
+    background-color:rgb(148, 221, 197);
     border-radius: 15px;
     /*set max-width for the diplay in case it overflows*/
     max-width: 500px;
@@ -23,8 +23,8 @@ body{
     font-size: 5rem;
     text-align: left;
     border: none;
-    background-color:rgb(27, 27, 134);
-    color: white;
+    background-color: rgb(38, 6, 98);
+    color: rgb(255, 255, 255);
 
 }
 /*Use the keys ID to structure all the buttons*/
